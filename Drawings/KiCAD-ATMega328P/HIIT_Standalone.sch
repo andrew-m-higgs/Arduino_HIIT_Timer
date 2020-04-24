@@ -1,0 +1,200 @@
+EESchema Schematic File Version 4
+LIBS:HIIT_Standalone-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-PU U?
+U 1 1 5EAE1553
+P 5850 4750
+F 0 "U?" H 5206 4796 50  0000 R CNN
+F 1 "ATmega328P-PU" H 5206 4705 50  0000 R CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 5850 4750 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 5850 4750 50  0001 C CNN
+	1    5850 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5EAE21D0
+P 4600 3300
+F 0 "SW?" H 4600 3535 50  0000 C CNN
+F 1 "SW_SPST" H 4600 3444 50  0000 C CNN
+F 2 "" H 4600 3300 50  0001 C CNN
+F 3 "~" H 4600 3300 50  0001 C CNN
+	1    4600 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EAE2ABA
+P 4250 3750
+F 0 "R?" H 4320 3796 50  0000 L CNN
+F 1 "R" H 4320 3705 50  0000 L CNN
+F 2 "" V 4180 3750 50  0001 C CNN
+F 3 "~" H 4250 3750 50  0001 C CNN
+	1    4250 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5EAE2CE5
+P 5600 3150
+F 0 "C?" H 5778 3196 50  0000 L CNN
+F 1 "CAP" H 5778 3105 50  0000 L CNN
+F 2 "" H 5600 3150 50  0001 C CNN
+F 3 "~" H 5600 3150 50  0001 C CNN
+	1    5600 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5EAE2DFE
+P 5600 3150
+F 0 "C?" H 5778 3196 50  0000 L CNN
+F 1 "CAP" H 5778 3105 50  0000 L CNN
+F 2 "" H 5600 3150 50  0001 C CNN
+F 3 "~" H 5600 3150 50  0001 C CNN
+	1    5600 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5EAE30AC
+P 5000 3150
+F 0 "C?" H 5178 3196 50  0000 L CNN
+F 1 "CAP" H 5178 3105 50  0000 L CNN
+F 2 "" H 5000 3150 50  0001 C CNN
+F 3 "~" H 5000 3150 50  0001 C CNN
+	1    5000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y?
+U 1 1 5EAE352F
+P 5300 3650
+F 0 "Y?" H 5300 3918 50  0000 C CNN
+F 1 "Crystal" H 5300 3827 50  0000 C CNN
+F 2 "" H 5300 3650 50  0001 C CNN
+F 3 "~" H 5300 3650 50  0001 C CNN
+	1    5300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker LS?
+U 1 1 5EAE484E
+P 3850 3550
+F 0 "LS?" H 4020 3546 50  0000 L CNN
+F 1 "Speaker" H 4020 3455 50  0000 L CNN
+F 2 "" H 3850 3350 50  0001 C CNN
+F 3 "~" H 3840 3500 50  0001 C CNN
+	1    3850 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 4750 4350 4650
+Wire Wire Line
+	5000 2900 5600 2900
+Connection ~ 5600 2900
+Wire Wire Line
+	5600 2900 7350 2900
+Wire Wire Line
+	7350 2900 7350 4750
+Wire Wire Line
+	5600 3400 5600 3650
+Wire Wire Line
+	5600 3650 5450 3650
+Connection ~ 5600 3400
+Wire Wire Line
+	5000 3400 5000 3650
+Wire Wire Line
+	5000 3650 5150 3650
+Wire Wire Line
+	5150 3650 5150 3850
+Wire Wire Line
+	5150 3850 5250 3850
+Wire Wire Line
+	5250 3850 5250 4150
+Connection ~ 5150 3650
+Wire Wire Line
+	5450 3650 5450 3850
+Wire Wire Line
+	5450 3850 5350 3850
+Wire Wire Line
+	5350 3850 5350 4150
+Connection ~ 5450 3650
+Wire Wire Line
+	3550 2900 3550 3750
+Wire Wire Line
+	3550 3750 3850 3750
+Connection ~ 5000 2900
+Wire Wire Line
+	3950 3750 4100 3750
+Wire Wire Line
+	4400 3750 4750 3750
+Wire Wire Line
+	4750 3750 4750 4150
+Wire Wire Line
+	4600 3100 4600 2900
+Connection ~ 4600 2900
+Wire Wire Line
+	4600 2900 3550 2900
+Wire Wire Line
+	4600 3500 4600 3650
+Wire Wire Line
+	4600 3650 4850 3650
+Wire Wire Line
+	4850 3650 4850 4150
+Wire Wire Line
+	4600 2900 5000 2900
+Connection ~ 7350 4750
+Wire Wire Line
+	7350 4750 7350 4900
+Wire Wire Line
+	9150 4300 8900 4300
+Wire Wire Line
+	9150 4900 9150 4300
+Wire Wire Line
+	8500 4900 9150 4900
+Wire Wire Line
+	7350 4900 8500 4900
+Connection ~ 8500 4900
+$Comp
+L Display_Character:NHD-0420H1Z U?
+U 1 1 5EA68954
+P 8500 4100
+F 0 "U?" H 8500 3211 50  0000 C CNN
+F 1 "NHD-0420H1Z" H 8500 3120 50  0000 C CNN
+F 2 "Display:NHD-0420H1Z" H 8500 3200 50  0001 C CNN
+F 3 "http://www.newhavendisplay.com/specs/NHD-0420H1Z-FSW-GBW-33V3.pdf" H 8600 4000 50  0001 C CNN
+	1    8500 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4750 4350 5350
+Wire Wire Line
+	4350 5350 4650 5350
+Connection ~ 4350 4750
+$Comp
+L Device:R_POT_Small RV?
+U 1 1 5EA78A49
+P 9500 4550
+F 0 "RV?" H 9441 4596 50  0000 R CNN
+F 1 "R_POT_Small" H 9441 4505 50  0000 R CNN
+F 2 "" H 9500 4550 50  0001 C CNN
+F 3 "~" H 9500 4550 50  0001 C CNN
+	1    9500 4550
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

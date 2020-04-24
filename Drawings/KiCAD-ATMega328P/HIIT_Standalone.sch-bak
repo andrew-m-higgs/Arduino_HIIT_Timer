@@ -1,0 +1,137 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-PU U?
+U 1 1 5EAE1553
+P 8000 5050
+F 0 "U?" H 7356 5096 50  0000 R CNN
+F 1 "ATmega328P-PU" H 7356 5005 50  0000 R CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 8000 5050 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 8000 5050 50  0001 C CNN
+	1    8000 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5EAE21D0
+P 5150 5150
+F 0 "SW?" H 5150 5385 50  0000 C CNN
+F 1 "SW_SPST" H 5150 5294 50  0000 C CNN
+F 2 "" H 5150 5150 50  0001 C CNN
+F 3 "~" H 5150 5150 50  0001 C CNN
+	1    5150 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EAE28E6
+P 2400 5050
+F 0 "R?" H 2470 5096 50  0000 L CNN
+F 1 "R" H 2470 5005 50  0000 L CNN
+F 2 "" V 2330 5050 50  0001 C CNN
+F 3 "~" H 2400 5050 50  0001 C CNN
+	1    2400 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EAE2ABA
+P 2900 5100
+F 0 "R?" H 2970 5146 50  0000 L CNN
+F 1 "R" H 2970 5055 50  0000 L CNN
+F 2 "" V 2830 5100 50  0001 C CNN
+F 3 "~" H 2900 5100 50  0001 C CNN
+	1    2900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5EAE2CE5
+P 4300 4000
+F 0 "C?" H 4478 4046 50  0000 L CNN
+F 1 "CAP" H 4478 3955 50  0000 L CNN
+F 2 "" H 4300 4000 50  0001 C CNN
+F 3 "~" H 4300 4000 50  0001 C CNN
+	1    4300 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5EAE2DFE
+P 4300 4000
+F 0 "C?" H 4478 4046 50  0000 L CNN
+F 1 "CAP" H 4478 3955 50  0000 L CNN
+F 2 "" H 4300 4000 50  0001 C CNN
+F 3 "~" H 4300 4000 50  0001 C CNN
+	1    4300 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5EAE30AC
+P 4150 4500
+F 0 "C?" H 4328 4546 50  0000 L CNN
+F 1 "CAP" H 4328 4455 50  0000 L CNN
+F 2 "" H 4150 4500 50  0001 C CNN
+F 3 "~" H 4150 4500 50  0001 C CNN
+	1    4150 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y?
+U 1 1 5EAE352F
+P 3450 4150
+F 0 "Y?" H 3450 4418 50  0000 C CNN
+F 1 "Crystal" H 3450 4327 50  0000 C CNN
+F 2 "" H 3450 4150 50  0001 C CNN
+F 3 "~" H 3450 4150 50  0001 C CNN
+	1    3450 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5EAE3CD3
+P 3000 5550
+F 0 "D?" H 2993 5766 50  0000 C CNN
+F 1 "LED" H 2993 5675 50  0000 C CNN
+F 2 "" H 3000 5550 50  0001 C CNN
+F 3 "~" H 3000 5550 50  0001 C CNN
+	1    3000 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker LS?
+U 1 1 5EAE484E
+P 4050 5300
+F 0 "LS?" H 4220 5296 50  0000 L CNN
+F 1 "Speaker" H 4220 5205 50  0000 L CNN
+F 2 "" H 4050 5100 50  0001 C CNN
+F 3 "~" H 4040 5250 50  0001 C CNN
+	1    4050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5EB259B2
+P 2450 5550
+F 0 "D?" H 2443 5766 50  0000 C CNN
+F 1 "LED" H 2443 5675 50  0000 C CNN
+F 2 "" H 2450 5550 50  0001 C CNN
+F 3 "~" H 2450 5550 50  0001 C CNN
+	1    2450 5550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
